@@ -22,8 +22,8 @@ public class TS1_VerifyURLAndTitle {
 	 // Assert.assertEquals(HomepageTitle, "Home page");
 	 // Kiểm tra url của page đăng nhập 
 	 // System.out.println("Check URL Login page ");
-	 //	String LoginURL= driver.getCurrentUrl();
-	 //	Assert.assertEquals(LoginURL, "http://live.guru99.com/index.php/customer/account/login/");
+	 // String LoginURL= driver.getCurrentUrl();
+	 // Assert.assertEquals(LoginURL, "http://live.guru99.com/index.php/customer/account/login/");
 	 // Kiểm tra url của page tạo tài khoản 
 	 System.out.println("Check URL Sign up page ");
 	 String SignupURL= driver.getCurrentUrl();
