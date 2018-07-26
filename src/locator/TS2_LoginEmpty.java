@@ -45,9 +45,9 @@ public class TS2_LoginEmpty
 	  //Click Login button
 	  driver.findElement(By.xpath("//button[@id='send2']")).click();
 	  driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	  //
+	  //Get error message at Email field:
 	  Email_errmessage = driver.findElement(By.xpath("//div[@id='advice-required-entry-email']")).getText();
-	  //
+	  //Get error message at Password field:
 	  Pass_errmessage = driver.findElement(By.xpath("//div[@id='advice-required-entry-pass']")).getText();
 
 	  
