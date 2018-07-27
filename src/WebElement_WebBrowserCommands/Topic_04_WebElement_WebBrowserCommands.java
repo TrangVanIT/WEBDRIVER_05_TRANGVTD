@@ -39,7 +39,7 @@ public class Topic_04_WebElement_WebBrowserCommands
 	  String actual_result=select.getFirstSelectedOption().getText();
 	  Assert.assertEquals(actual_result,"Automation Tester");
 	  //Chọn giá trị Manual Tester trong dropdown bằng phương thức selectValue
-	  select.selectByValue("Manual Tester");
+	  //select.selectByValue("Manual Tester");
 	  
   }
   @AfterClass
