@@ -16,7 +16,7 @@ public class TS1_VerifyURLAndTitle {
   @Test
   public void VerifyURLAndTitle() 
   {
-	 // Kiểm tra title của page là: "Home page"
+	 // Kiểm tra title của Assert.assertEquals page là: "Home page"
 	 // System.out.println("Check homepage title");
 	 // String HomepageTitle= driver.getTitle();
 	 // Assert.assertEquals(HomepageTitle, "Home page");
