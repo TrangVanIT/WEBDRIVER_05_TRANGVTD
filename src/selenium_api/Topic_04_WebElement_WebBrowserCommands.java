@@ -33,14 +33,16 @@ public class Topic_04_WebElement_WebBrowserCommands
 	  WebElement JobRole01_Dropdown = driver.findElement(By.xpath("//select[@id='job1']"));
 	  Select select= new Select(JobRole01_Dropdown);
 	  Assert.assertFalse(select.isMultiple());
+	  
 	  //Chọn giá trị Automation Tester trong dropdown bằng phương thức selectVisible 
 	  //và Kiểm tra giá trị đã được chọn thành công
 	  select.selectByVisibleText("Automation Tester");
-	  String actual_result=select.getFirstSelectedOption().getText();
-	  Assert.assertEquals(actual_result,"Automation Tester");
-	  //Chọn giá trị Manual Tester trong dropdown bằng phương thức selectValue
-	  //select.selectByValue("Manual Tester");
+	  Assert.assertEquals(select.getFirstSelectedOption().getText(),"Automation Tester");
+	  select.deselectByVisibleText("Automation Tester");
 	  
+	  //Chọn giá trị Manual Tester trong dropdown bằng phương thức selectValue
+	  select.selectByValue("manual");
+	  Assert.assertEquals(select.getFirstSelectedOption().getText(),"Manual Tester");
   }
   @AfterClass
   public void afterClass() 
