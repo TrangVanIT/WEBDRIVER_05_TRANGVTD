@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Online 07" parallel="false">
+	<test name="Run On User Module">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testng.TestNG_04_MultiBrowsers" />
+		</classes>
+	</test>
+</suite>

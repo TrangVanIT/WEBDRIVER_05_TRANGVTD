@@ -29,7 +29,8 @@ public class Topic_04_Textbox_Textarea_Dropdown {
 	By PassTxb = By.xpath("//input[@name='password']");
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass() 
+	{
 		// Truy cập vào trang: http://daominhdam.890m.com/
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -46,9 +47,7 @@ public class Topic_04_Textbox_Textarea_Dropdown {
 		pass = "123456";
 		newaddress = "xa ba edit";
 		newcity = "Tam Ky edit";
-
 	}
-
 	@Test(enabled = false)
 	public void TS1_dropdown_list() throws InterruptedException {
 		driver.get("http://daominhdam.890m.com/");
@@ -72,7 +71,6 @@ public class Topic_04_Textbox_Textarea_Dropdown {
 		// Kiểm tra dropdown có 5 giá trị:
 		Assert.assertEquals(select.getOptions().size(), 5);
 		Thread.sleep(3000);
-
 	}
 
 	// textbox/ textarea
@@ -93,10 +91,10 @@ public class Topic_04_Textbox_Textarea_Dropdown {
 
 		WebElement userid = driver.findElement(By.xpath("//input[@name='uid']"));
 		userid.clear();
-		userid.sendKeys("mngr146220");
+		userid.sendKeys("mngr158770");
 		WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
 		password.clear();
-		password.sendKeys("bEmEvYp");
+		password.sendKeys("nYgugut");
 
 		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
 
@@ -163,14 +161,16 @@ public class Topic_04_Textbox_Textarea_Dropdown {
 
 	}
 
-	public int RandomUniqueNumber() {
+	public int RandomUniqueNumber()
+	{
 		Random rand = new Random();
 		int number = rand.nextInt(2222) + 1;
 		return number;
 	}
 
 	@AfterClass
-	public void afterClass() {
+	public void afterClass()
+	{
 		driver.quit();
 	}
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Online 07" parallel="false">
+	<!-- <test name="Module 01"> <groups> <run> <include name="user" /> </run> 
+		</groups> <classes> <class name="testng.TestNG_01_Annotation"/> <class name="testng.TestNG_02_Group_Priority" 
+		/> </classes> </test> -->
+	<parameter name="email" value="trangvtdtest@gmail.com" />
+	<parameter name="password" value="123456" />
+	<!-- Bai 4 -->
+	<!-- <test name="Run On CHROME"> <parameter name="browser" value="chrome" 
+		/> <classes> <class name="testng.TestNG_04_MultiBrowsers" /> </classes> </test> 
+		<test name="Run On FIREFOX"> <parameter name="browser" value="firefox" /> 
+		<classes> <class name="testng.TestNG_04_MultiBrowsers" /> </classes> </test> 
+		<test name="Run On IE"> <parameter name="browser" value="ie" /> <classes> 
+		<class name="testng.TestNG_04_MultiBrowsers" /> </classes> </test> <test 
+		name="Run On CHROME HEADLESS"> <parameter name="browser" value="chromeheadless" 
+		/> <classes> <class name="testng.TestNG_04_MultiBrowsers" /> </classes> </test> -->
+	<!-- Bai 5 -->
+	<!-- <test name="Run On CHROME"> <parameter name="browser" value="chrome" 
+		/> <classes> <class name="testng.TestNG_05_Loop" /> </classes> </test> -->
+	<!-- Bai 6 -->
+	<test name="Run On CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="testng.TestNG_06_Dependencies" />
+		</classes>
+	</test>
+
+
+</suite> 

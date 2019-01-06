@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Run Package">
+	<test name="Run on Firefox">
+		<parameter name="email" value="trangvtdtest@gmail.com" />
+		<parameter name="password" value="123456" />
+		<parameter name="browser" value="firefox" />
+		<packages>
+			<package name="testng" />
+		</packages>
+	</test>
+</suite>
